@@ -1,181 +1,116 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
     margin: 0px;
     padding: 0px;
 }
 
-html{
+/*Cores*/
+:root {
+    --cor-de-fundo: #000912;
+    --barra-de-navegação: #00060b;
+    --cor-para-fontes: #78A3A1;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
-/*INICIO DA NAVEGAÇÃO*/
-nav{
-    padding: 20px;
-    background-color: rgba(2, 11, 17, 0.774);
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+/*Inicio da navegação*/
+nav {
     position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    transition: all 0.3s ease;
     z-index: 999;
-}
-
-nav:hover{
-    background-color: rgb(2, 11, 17);
-}
-
-.cab{
-    text-decoration: none;
-    margin-left: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: rgb(209, 237, 237);
-    transition: all 0.3s ease;
-}
-
-.cab:hover{
-    color: rgb(42, 70, 70);
-}
-/*FIM DA NAVEGAÇÃO*/
-
-
-body{
-    background-color: rgb(2, 11, 17); 
-}
-
-article{
-    font-family: 'Roboto', sans-serif;
-}
-
-/*CSS do meu banner principal*/
-.principal{
-    margin-top: 0px;
-}
-
-.fundo-1{
-    background-image: url('../img/banner.jpg');
+    background-color: #00060bb7;
     width: 100%;
-    height: 750px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.949);
-    transition: all 0.9s ease;
-}
-
-.fundo-1:hover{
-    box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.949);
-}
-
-.caixa-1 {
-    background-image: linear-gradient(to bottom, rgb(13, 16, 55), rgb(8, 7, 25));
-    margin: 0px auto;
-    width: 700px;
-    padding: 30px;
-    border: 1px solid rgb(8, 40, 61);
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.519);
-    
-    /* Propriedades para centralizar a seção */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.sub-titulo{ 
+    height: 60px;
+    line-height: 60px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    color: rgb(209, 237, 237);
-}
-
-.titulo {
-    text-align: center;
-    font-size: 4em;
-    visibility: visible;
-    opacity: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.61);
     transition: all 0.3s ease;
-    color: rgb(209, 237, 237);
 }
 
-.titulo:hover {
-    font-size: 4.5em;
-    opacity: 1;
-    width: auto;
-    color: rgb(72, 60, 196);
+nav:hover {
+    background-color: var(--barra-de-navegação);
 }
 
-
-.titulo-2{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
-    color: rgb(209, 237, 237);
-}
-/*TERMINA AQUI*/
-
-.conjunto{
+header nav ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 15%;
-    z-index: 1;
+    flex-direction: row;
 }
 
-.sobre{
-    width: 100%;
-    height: 1080px;
-    background-image: url('../img/fundo\ sobre\ mim.jpg');
-    background-repeat: no-repeat;
+header nav ul li {
+    margin-left: 2%;
+    list-style-type: none;
 }
 
-#eu{
-    width: 20%;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-#eu:hover{
-    width: 24%;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.726);
-}
-
-#titulo-sobre{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3em;
-    color: rgb(209, 237, 237);
-    padding: 2%;
-}
-
-#paragrafo-sobre{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    width: 50%;
-    text-align: justify;
-    color: rgb(209, 237, 237);
-}
-
-#btn-1{
-    margin: 4%;
-    padding: 2%;
-    border-radius: 50px;
-    border: 1px solid #1201565a;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.6em;
-    font-weight: bolder;
-    background-image: linear-gradient(to right, rgb(26, 31, 109), rgb(41, 3, 51));
-    color: #fff;
-    transition: all 0.3s ease;
+header nav ul a {
     text-decoration: none;
+    color: var(--cor-para-fontes);
+    font-family: 'Poppins';
+    transition: all 0.3s ease;
 }
 
-#btn-1:hover{
-    font-size: 1.9em;
-    color: #000;
-    background-image: linear-gradient(to left, rgb(0, 102, 255), rgb(165, 0, 206));
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.826);
+header nav ul a:hover {
+    color: #b7f5f2;
+}
+/*Fim da navegação*/
+
+/*Inicio de home*/
+
+.Home {
+    background-image: url('../img/banner.jpg');
+    box-shadow: inset 0 0 30px rgb(0, 0, 0);
 }
 
-#btn-1:active{
-    color: aqua;
+.Main {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100vh;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    color: #a3d6d4;
 }
+
+.Titulo-home {
+    font-family: 'Poppins';
+    margin-bottom: 4%;
+}
+
+#portrait1 {
+    max-width: 70%;
+    height: auto;
+    min-width: 28%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: pulo 1s ease-in-out infinite;
+}
+
+#sub-titulo {
+    font-size: 1.5em;
+}
+
+#titulo {
+    font-size: 3em;
+}
+
+#descricao {
+    font-size: 1em;
+    width: 80%;
+    font-family: 'Poppins';
+}
+
+/*Animação para o portrait*/
+@keyframes pulo {
+    0% {top: 30px;}
+    50% {top: 50px;}
+    100% {top: 30px}
+}
+
+/*Fim de home*/

@@ -2,61 +2,64 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Renan Nunes</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
 
     <!--Importando css-->
-    <link rel="stylesheet" href="./css/estilo.css" />
-
-    <!--Importando fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#sobre-mim" class="cab">SOBRE MIM</a>
-            <a href="#" class="cab">SKILLS</a>
-            <a href="#" class="cab">CONTATO</a>
-            <a href="#" class="cab">PROJETOS</a>
+            <ul>
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#Sobre">SOBRE</a></li>
+                <li><a href="#Projetos">PROJETOS</a></li>
+                <li><a href="#Servicos">SERVIÇOS</a></li>
+                <li><a href="#Contato">CONTATO</a></li>
+            </ul>
         </nav>
     </header>
-    <main class="principal">
-        <section class="fundo-1">
-            <article class="caixa-1">
-                <p class="sub-titulo">Olá, meu nome é</p>
-                <h1 class="titulo">Renan Ferreira Nunes</h1>
-                <p class="titulo-2">Bem vindo ao meu portfólio</p>
+
+    <main class="Home">
+        <section id="Home" class="Main">
+            <article id="info">
+                <div class="Titulo-home">
+                    <h3 id="sub-titulo">Olá, meu nome é</h3>
+                    <h1 id="titulo">Renan Ferreira Nunes</h1>
+                    <h3 id="sub-titulo">E eu sou um Web designer</h3>
+                </div>
+                <p id="descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint dignissimos in
+                    architecto,
+                    reprehenderit nulla ullam laboriosam quos, libero saepe eum perferendis, tempore quisquam quas nihil
+                    at! Sit, illo velit!
+                </p>
             </article>
+
+            <img src="./img/akira.png" alt="Renan" id="portrait1">
         </section>
     </main>
 
-    <main class="sobre" id="sobre-mim">
-        <section>
-            <article class="conjunto">
-                <img src="./img/akira.png" alt="Eu" id="eu">
-                <h1 id="titulo-sobre">Sobre mim</h1>
-                <p id="paragrafo-sobre">
-                    Olá! Meu nome é Renan e sou um web-designer apaixonado pelo
-                    que faço. Com apenas 18 anos de idade, tenho o privilégio de
-                    trabalhar com algo que amo: criar sites e conteúdos visuais. Para
-                    mim, cada projeto é uma oportunidade de explorar minha criatividade
-                    e habilidades técnicas, buscando sempre alcançar a melhor solução
-                    para cada cliente. Acredito que o design é uma ferramenta poderosa
-                    para transmitir ideias e emoções, e sinto-me realizando quando vejo
-                    meus trabalhos gerando impacto e engajamento. Estou sempre em busca
-                    de aprender e evoluir, a fim de me tornar um profissional ainda mais
-                    completo e capaz de atender às necessidades do mercado. Se você
-                    precisa de um site ou projeto visual incrível, é só apertar o botão:
-                </p>
+    <main class="Sobre-mim">
+        <section id="Sobre">
+            <img src="./img/akira.png" alt="Renan">
 
-                <a id="btn-1" href="#sobre-mim">
-                    VAMOS TRABALHAR JUNTOS
-                </a>
+            <article>
+                <h2>SOBRE MIM</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eveniet velit modi voluptatem nisi
+                    beatae ut fugiat, provident libero qui quam architecto pariatur, impedit, eos adipisci. Eius labore
+                    consectetur quam?
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eveniet velit modi voluptatem nisi
+                    beatae ut fugiat, provident libero qui quam architecto pariatur, impedit, eos adipisci. Eius labore
+                    consectetur quam?
+                </p>
             </article>
         </section>
     </main>
