@@ -114,3 +114,84 @@ header nav ul a:hover {
 }
 
 /*Fim de home*/
+
+/*Inicio de Sobre mim*/
+
+.Sobre-mim {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    background-image: linear-gradient(to bottom, #000c18, #000409);
+}
+
+#Sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    padding: 5%;
+}
+
+#Sobre-artigo {
+    font-family: 'Poppins';
+    color: #85a09f;
+    margin-left: 3%;
+}
+
+#Sobre-titulo {
+    font-size: 3em;
+    color: #bbe3e2;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+#Sobre-p {
+    font-size: 1.2em;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+}
+
+#Sobre-btn {
+    text-align: center;
+    padding: 4%;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(to right, #0b012d, #11017f);
+    color: #bbe3e2;
+    margin: 4%;
+    font-size: 1.2em;
+    transition: all 0.1s ease-in-out;
+}
+
+#Sobre-btn:hover {
+    animation: pulse .4s ease-in-out infinite alternate;
+    cursor: pointer;
+    background: linear-gradient(to right, #1b036b, #1e02cd);
+}
+
+#Sobre-btn:active {
+    color: #000409;
+}
+
+/*Animação do botão*/
+@keyframes pulse {
+    from {
+      transform: scale(1); /* define a escala original do botão */
+    }
+  
+    to {
+      transform: scale(1.1); /* define a escala do botão quando o mouse estiver sobre ele */
+    }
+}
+
+#portrait2 {
+    max-width: 70%;
+    height: auto;
+    min-width: 28%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*Fim de Sobre mim*/
