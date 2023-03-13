@@ -10,6 +10,7 @@
     --cor-de-fundo: #000912;
     --barra-de-navegação: #00060b;
     --cor-para-fontes: #78A3A1;
+    --texto: #85a09f;
 }
 
 html {
@@ -18,6 +19,23 @@ html {
 
 body {
     background-color: var(--cor-de-fundo);
+}
+
+/*Estilizando a barra de rolagem*/
+
+body::-webkit-scrollbar {
+    background-color: #1a1b1b;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2d2f2f;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #494d4d;
 }
 
 /*Inicio da navegação*/
@@ -159,17 +177,18 @@ header nav ul a:hover {
     padding: 4%;
     border-radius: 40px;
     border: none;
-    background: linear-gradient(to right, #0b012d, #11017f);
+    background-color: #4833cf;
     color: #bbe3e2;
     margin: 4%;
     font-size: 1.2em;
+    font-family: 'Poppins';
     transition: all 0.1s ease-in-out;
 }
 
 #Sobre-btn:hover {
     animation: pulse .4s ease-in-out infinite alternate;
     cursor: pointer;
-    background: linear-gradient(to right, #1b036b, #1e02cd);
+    background-color: #735ff1;
 }
 
 #Sobre-btn:active {
@@ -195,3 +214,89 @@ header nav ul a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /*Fim de Sobre mim*/
+
+/*Inicio de Serviços*/
+
+.Servicos {
+    background-color: #000409;
+    width: 100%;
+    height: 100vh;
+}
+
+.btn-servicos {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    margin: 4%;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #4833cf;
+    color: #c1c1c1;
+    font-family: 'Poppins';
+    transition: background-color 0.3s ease;
+}
+
+.btn-servicos:hover {
+    background-color: #735ff1;
+}
+
+.btn-servicos:active {
+    color: #000409;
+}
+
+#Servicos-descricao {
+    font-family: 'Poppins';
+    color: var(--texto);
+    padding: 5%;
+    text-align: center;
+}
+
+#Servicos-descricao h1{
+    color: #bbe3e2;
+    padding-bottom: 2%;
+    font-size: 3em;
+}
+
+#Servicos-descricao p {
+    font-size: 1.2em;
+}
+
+#Conteudos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#Conteudos section {
+    background-image: linear-gradient(to bottom, #12181f, #000409);
+    margin: 1%;
+    width: 30%;
+    padding: 3%;
+    height: 260px;
+    border: 1px solid #62686c;
+    font-family: 'Poppins';
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    color: #657878;
+    cursor: default;   
+}
+
+#Conteudos section:hover {
+    transform: scale(1.1);
+}
+
+#Conteudos section p {
+    font-size: .9em;
+}
+
+#Conteudos section h2 {
+    padding: 5%;
+    font-size: 1.6em;
+    color: #93abab;
+}
+/*Fim de Serviços*/
